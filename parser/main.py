@@ -6,9 +6,8 @@ import json
 import csv
 url = "https://health-diet.ru/table_calorie/?utm_source=leftMenu&utm_medium=table_calorie"
 headers = {
-    'accept': '*/*',
-    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
-                  'Chrome/106.0.0.0 Safari/537.36 OPR/92.0.0.0 (Edition Yx GX)'
+    'accept': '',  # задаём загаловки что-бы сайт не считал нас за бота
+    'user-agent': ''
 }
 req = requests.get(url, headers=headers)
 src = req.text
